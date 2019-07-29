@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <svg-icon icon-class="language"/>
+    <span @click="changeLanguage">
+      <svg-icon icon-class="language"/>
+    </span>
     <router-view/>
   </div>
 </template>
@@ -9,8 +11,13 @@
 <script>
 export default {
   name: 'App',
-  components: {
-
+  methods: {
+    changeLanguage () {
+      const language = this.$store.getters.language
+      const temp = language === 'zh' ? 'en' : 'zh'
+      this.$i18n.locale = temp
+      this.$store.dispatch('app/setLanguage', temp)
+    }
   }
 }
 </script>
