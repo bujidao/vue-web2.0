@@ -1,6 +1,7 @@
 <template>
     <div>
-        {{msg}}
+      <p>{{msg}}</p>
+      <p>{{$t('app.welcome')}}</p>
     </div>
 </template>
 
