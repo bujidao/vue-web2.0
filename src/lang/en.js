@@ -1,5 +1,6 @@
 export default {
   app: {
-    welcome: 'Welcome to Your Vue.js App'
+    welcome: 'Welcome to Your Vue.js App',
+    vueOfficialWebsite: 'vue Official Website'
   }
 }
