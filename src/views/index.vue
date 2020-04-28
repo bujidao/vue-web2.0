@@ -12,7 +12,7 @@ export default {
   name: 'index',
   data () {
     return {
-      msg: 'i am vue demo'
+      msg: 'i am vue demo.'
     }
   },
   components: {
