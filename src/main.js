@@ -8,6 +8,8 @@ import store from './store/index.js'
 import '@/icons/index.js'
 import i18n from './lang/index.js'
 
+import '@/styles/index.scss'
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

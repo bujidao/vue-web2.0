@@ -1,5 +1,5 @@
 <template>
-  <div class="app-wrapper">
+  <div class="app-container">
     <img src="@/assets/logo.png">
     <span @click="changeLanguage">
       <svg-icon icon-class="language"/>
@@ -34,3 +34,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .app-container {
+    /* background: red; */
+  }
+</style>
