@@ -37,6 +37,6 @@ export default {
 
 <style lang="scss" scoped>
   .app-container {
-    /* background: red; */
+    background: $skyBlue;
   }
 </style>
