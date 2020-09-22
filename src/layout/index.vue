@@ -1,5 +1,6 @@
 <template>
   <div class="app-container">
+    <app-header></app-header>
     <img src="@/assets/logo.png">
     <span @click="changeLanguage">
       <svg-icon icon-class="language"/>
@@ -11,12 +12,16 @@
 <script>
 import ResizeMixin from './mixin/ResizeHandler'
 import { mapState } from 'vuex'
+import { AppHeader } from './components'
 export default {
   name: 'Layout',
   data () {
     return {
       msg: 'hi app'
     }
+  },
+  components: {
+    AppHeader
   },
   mixins: [ResizeMixin],
   computed: {
